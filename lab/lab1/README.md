@@ -24,16 +24,18 @@ Your prototype must contain all three of the following components:
 - Grid/Columns
 - Modal
 
+QUESTION: Is there a way to just have 1 modal template (as it takes up a lot of space!) but allow the content to change depending on which button is clicked? 
+
 ### Choose Your Own Components
 
 Your prototype should contain your choice of five of the following components.
 
-- Table
-- Input Group
-- Button Group
-- Glyph Icon
-- Label
-- Alert
+- Table -- DONE
+- Input Group -- DONE
+- Button Group -- DONE
+- Glyph Icon (seems to have been removed?)
+- Label -- DONE
+- Alert -- DONE
 - Tooltip
 
 ### Media Queries

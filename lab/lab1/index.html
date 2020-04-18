@@ -8,51 +8,206 @@
     <!-- Place framework CSS code here. -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
     <!-- Sidebar -->
     <div class="sidebar">
+    <!-- navbar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
-          <div class="topright-button" style="float: right">
-            [Add New]
-          </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
           </div>
+          <div class="topright-button" style="float: right">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Add New
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
+      <!-- Listings -->
+      <!-- Define the Modal for all listings -->
+      <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Manufacturers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <!-- alert -->
+                  <div class="alert alert-danger" role="alert">
+                    This manufacturer has a low inventory.
+                  </div>
+                  <!-- row 1 -->
+                  <div class="row justify-content-between">
+                    <div class="col"><b>Tandy’s Basketweavers</b></div>
+                    <!-- Column for buttons -->
+                    <div class="col">
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary">
+                          <input type="radio" name="options" id="option1"> Edit
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                          <input type="radio" name="options" id="option2"> Delete
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                          <input type="radio" name="options" id="option3"> Export
+                        </label>
+                      </div>    
+                    </div>
+                  </div>
+
+                  <!-- Padding -->
+                  <div class="row mt-2"></div>
+                  <div class="border-top my-3"></div>
+                  <div class="row mt-1"></div>
+                  <!-- Row 2: with details  -->
+                  <div class="row">
+                    <div class="col">
+                      <b>Address</b><br>
+                      490 Freedom Drive<br>Philadelphia, PA 19425
+                    </div>
+                    <div class="col">
+                      <b>Contact</b><br>
+                      123@gmail.com
+                    </div>
+                    <div class="col">
+                      364<br>
+                      Baskets sold in past 7 days
+                    </div>
+                  </div>
+                 
+                  <!-- Padding -->
+                  <div class="row mt-2"></div>
+                  <div class="border-top my-3"></div>
+                  <div class="row mt-1"></div>
+                   <!-- Row 3: Table Header-->
+                  <div class="row">
+                      <div class= "col"><b>Sales</b></div>
+                  </div>
+                  <!-- Padding -->
+                  <div class="row mt-1"></div>
+                  <!-- Row 4: Table -->
+                  <div class="row">
+                    <div class="col">
+                      <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Purchase</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Fruit Basket</td>
+                          </tr>
+                          <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Gift Basket</td>
+                          </tr>
+                          <tr>
+                            <td>Larry</td>
+                            <td>The Bird</td>
+                            <td>Easter Basket</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- Add in search bar for the table -->
+                      <label for="exampleFormControl1">Serch Sales</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" type="button">Search</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="First Name, Last Name or Purchase" aria-label="" aria-describedby="basic-addon1" id="exampleFormControl1">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of the rows -->
+                </div>
+                <!-- For container -->
+              </div>
+              <!-- End of Modal Body-->
+            </div>
+            <!-- Modal content -->
+          </div>
+          <!-- Modal dialog -->
+        </div>
+        <!-- modal fade -->
+
+      <!-- Item 1 -->
       <div class="item">
-        <h2 class="item-heading">Tandy’s Basketweavers</h2>
-        <div>490 Freedom Drive<br>
-        Philadelphia, PA 19425</div>
+        <!-- Inlcude option for modal -->
+        <button type="button" class="btn text-left" data-toggle="modal" data-target="#exampleModal" style="background-color:transparent" >
+          <h2 class="item-heading">Tandy’s Basketweavers</h2>
+          <div>490 Freedom Drive<br>Philadelphia, PA 19425</div>
+        </button>
       </div>
+
+      <!-- Item 2  -->
       <div class="item">
-        <h2 class="item-heading">Basket Case</h2>
-        <div>400 S 46th Street<br>
-        Philadelphia, PA 19144</div>
+        <!-- Inlcude option for modal -->
+        <button type="button" class="btn text-left" data-toggle="modal" data-target="#exampleModal" style="background-color:transparent">
+          <h2 class="item-heading">Basket Case</h2>
+          <div>400 S 46th Street<br>Philadelphia, PA 19144</div>  
+        </button>
       </div>
+
+      <!-- item 3 -->
       <div class="item">
-        <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
-        <div>2558 Walnut Street<br>
-        Philadelphia, PA 19107</div>
+        <button type="button" class="btn text-left" data-toggle="modal" data-target="#exampleModal" style="background-color:transparent">
+          <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
+          <div>2558 Walnut Street<br>Philadelphia, PA 19107</div>
+        </button>
       </div>
+
+      <!-- Item 4 -->
       <div class="item">
-        <h2 class="item-heading">Bask in the Glory</h2>
-        <div>2501 Walnut Street<br>
-        Philadelphia, PA 19107</div>
+        <button type="button" class="btn text-left" data-toggle="modal" data-target="#exampleModal" style="background-color:transparent">
+          <h2 class="item-heading">Bask in the Glory</h2>
+          <div>2501 Walnut Street<br>
+          Philadelphia, PA 19107</div>
+        </button>
       </div>
+
+      <!-- Item 5 -->
       <div class="item">
-        <h2 class="item-heading">Basket Ball</h2>
-        <div>2542 Walnut Street<br>
-        Philadelphia, PA 19107</div>
+        <button type="button" class="btn text-left" data-toggle="modal" data-target="#exampleModal" style="background-color:transparent">
+          <h2 class="item-heading">Basket Ball</h2>
+          <div>2542 Walnut Street<br>
+          Philadelphia, PA 19107</div>
+        </button>
       </div>
+
+      <!-- Item 6 -->
       <div class="sort">
         Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
       </div>
-    </div>
+
+    </div>  
+    <!-- End of Sidebar  -->
     <!-- Map -->
     <div id="map" class="map"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Javascript Imports -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
@@ -61,3 +216,4 @@
     <script src="js/setup.js"></script>
   </body>
 </html>
+© 2020 GitHub, Inc.
