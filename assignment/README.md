@@ -10,6 +10,11 @@ Applications are ultimately just tools. What problem or question does
 your application attempt to resolve or grapple with? How does your
 application speak to this problem/question?
 
+* The project is a map-based web dashboard to show the grocery locations in
+Philadelphia. It should allow users to see the accessibility, potential service
+area of each location. The app should also give a sense of which neighborhood
+faces the potential under demanded problem.
+
 ## The data
 
 Geospatial applications are all about working with data. What datasets
@@ -61,4 +66,3 @@ that you think would be useful? What technologies not covered seem exciting to
 you (you don't necessarily have to fully understand what they're for,
 this is a chance for you to get help interpreting a technology's
 purpose/usage).
-
