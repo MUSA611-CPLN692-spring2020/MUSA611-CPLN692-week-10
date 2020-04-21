@@ -11,11 +11,32 @@
   </head>
   <body>
     <!-- Sidebar -->
+    <div class="sidebar_new" style="background-color:powderblue;">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Manufacturers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Purchases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Basket Secrets</a>
+        </li>
+    </div>
     <div class="sidebar">
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
           <div class="topright-button" style="float: right">
-            [Add New]
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Add New
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">View History</a></li>
+                <li><a href="#">Email All Manufacturers</a></li>
+              </ul>
+            </div>
           </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
@@ -25,7 +46,11 @@
       <div class="item">
         <h2 class="item-heading">Tandy’s Basketweavers</h2>
         <div>490 Freedom Drive<br>
-        Philadelphia, PA 19425</div>
+        Philadelphia, PA 19425<br><br></div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+          Info
+        </button>
       </div>
       <div class="item">
         <h2 class="item-heading">Basket Case</h2>
@@ -51,6 +76,86 @@
         Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Manufacturer</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <h2>Tandy's Basketweavers</h2>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" checked> Edit
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2"> Delete
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3"> Export
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                <div class="col-md-4">
+                  <h3>Address</h3>
+                  490 Freedom Drive
+                  Philadelphia, PA 19425
+                </div>
+                <div class="col-md-4">
+                  <h3>Contact</h3>
+                  Dave Javis
+                  Senior Weavor
+                </div>
+                <div class="col-md-4">
+                  <h2>324</h2>
+                  Baskets Sold in the past 7 days
+                </div>
+                </div>
+              </div>
+              <div class="row">
+                <h3>Sales</h3>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">First name</th>
+                      <th scope="col">Last name</th>
+                      <th scope="col">Purchase</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>Fruit Basket</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>Gift Basket</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>Easter Basket</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Map -->
     <div id="map" class="map"></div>
     <!-- Javascript Imports -->
@@ -59,5 +164,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js" integrity="sha256-CNm+7c26DTTCGRQkM9vp7aP85kHFMqs9MhPEuytF+fQ=" crossorigin="anonymous"></script>
     <!-- Place framework JS code here. -->
     <script src="js/setup.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   </body>
 </html>
