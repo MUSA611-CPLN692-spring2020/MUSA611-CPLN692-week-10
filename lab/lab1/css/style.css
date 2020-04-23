@@ -7,7 +7,7 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 350px;
     height: 100%;
     top: 0;
 }
@@ -15,12 +15,49 @@ body {
 .sidebar {
     position: absolute;
     left: 0px;
-    width: 340px;
+    width: 350px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    padding: 20px;
-    padding-bottom: 60px;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.dropdown{
+  left: 190px;
+}
+
+.modalbutton {
+    margin-bottom: 5px;
+}
+
+.modal-content{
+  width: 700px;
+  padding: 5px;
+}
+
+.modal-body{
+  right: 80px;
+  left: 10px;
+}
+
+.alert{
+  padding: 5px 10px;
+}
+
+.btn-group button{
+    background-color:white;
+    color: black;
+    padding: 5px 17px;
+    right: 20px;
+}
+
+.table>thead>tr>th{
+  border-top: transparent;
+}
+
+.input-group input.amber-border {
+  border: 1px solid #ffca28;
 }
 
 .item {
@@ -74,13 +111,30 @@ Media Queries
 ============= */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
-    /*.item {
-        background-color: blue;
-    }*/
-}
+  .map {
+      position: absolute;
+      right: 0px;
+      left: 340px;
+      height: 100%;
+      top: 0;
+  }
+  .sidebar {
+      position: absolute;
+      left: 0px;
+      width: 340px;
+      top: 0;
+      bottom: 0;
+      overflow-y: auto;
+      padding: 10px;
+      padding-bottom: 40px;
+    }
+  }
 
 @media screen and (max-width: 479px) {
     /*.item {
         background-color: red;
     }*/
+    .sidebar {
+    display: none
+  }
 }
