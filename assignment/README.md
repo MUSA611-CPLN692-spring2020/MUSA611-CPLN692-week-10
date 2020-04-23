@@ -21,6 +21,11 @@ Geospatial applications are all about working with data. What datasets
 would you plan/like to use? If the data you'll be working with isn't
 already stored in a way that you can use, how will you be storing your data?
 
+* I acquired the grocery locations from OpenData Philly and OpenStreetMap API in
+Python. I organized those data into a GeoJSON file and uploaded to my GitHub.
+I plan to use jQuery to acquire them, but if it cause trouble, I may simply
+store them in local folder.
+
 ## Technologies used
 
 Which technologies covered in class (or discovered on your own!) do you
@@ -30,14 +35,23 @@ Review the APIs/online examples of leaflet, turf, jQuery, underscore (or
 any library not explicitly covered in class) for functions/uses which
 you'd like to explore. Briefly describe how you might use them.
 
+* The library such as leaflet, turf, jQuery as well as Mapbox API will be
+covered in this project.
+
 ## Design spec
 
 #### User experience
 
 At a high level, how do you expect people to use your application?
 - Who are the users?
+People who want to know more about the food accessibility in their neighborhood.
 - What do they gain from your application' use?
+They can view the distribution of grocery location in an more organized method.
+The locations will be counted in the unit of neighborhood. The travel time
+isochrones allows people to see the travel buffer around each store.
 - Are there any website/application examples in the wild to which you can compare your final?
+https://maps.openrouteservice.org/directions
+https://www.trafforddatalab.io/maps/explore/
 
 #### Layouts and visual design
 
@@ -57,6 +71,10 @@ these difficulties? For example, asynchronous behavior (ajax, events)
 are hard to use and think about. Global variables are a strategy for
 coping with that difficulty by breaking data out of the asynchronous
 context.
+
+* The travel time isochrones is the most difficult part. MapBox and
+OpenStreetMap have the API to achieve this. If I cannot figure out how
+to apply those APIs, the alternative would be distance buffer with turf.
 
 ## Missing pieces
 
