@@ -20,21 +20,21 @@ Additionally, I've used Bootstrap's naming conventions to describe the elements 
 
 Your prototype must contain all three of the following components:
 
-- Dropdown
-- Grid/Columns
-- Modal
+- Dropdown #
+- Grid/Columns #
+- Modal #
 
 ### Choose Your Own Components
 
 Your prototype should contain your choice of five of the following components.
 
-- Table
-- Input Group
-- Button Group
+- Table #
+- Input Group #
+- Button Group #
 - Glyph Icon
 - Label
-- Alert
-- Tooltip
+- Alert #
+- Tooltip #
 
 ### Media Queries
 
@@ -50,4 +50,3 @@ queries that will:
   800px and 480px
 - Remove the sidebar entirely and have the map take up the full screen when the width is smaller than
   480px
-
