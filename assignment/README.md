@@ -1,5 +1,13 @@
 # Final Project Proposal
 
+I would like to build upon the page I built for the midterm - showing global
+transmission of Covid-19. I've been pulling my data from https://coronadatascraper.com/;
+however, I've only been successful at manually downloading the data and using
+it in my map. Therefore, it may be worth exploring pulling most recent data
+from the website. I'm not sure what type of functionality or user input would
+be good for this project.
+
+--------------------------------
 Your assignment this week is to write a detailed proposal for your final
 project. In proposing your final, try to address each of the following
 areas. Please produce at least a paragraph which addresses the topics below
@@ -61,4 +69,3 @@ that you think would be useful? What technologies not covered seem exciting to
 you (you don't necessarily have to fully understand what they're for,
 this is a chance for you to get help interpreting a technology's
 purpose/usage).
-
