@@ -15,7 +15,7 @@ Additionally, I've used Bootstrap's naming conventions to describe the elements 
 - [Material Design Lite](https://getmdl.io/)
 - [Assembly](https://mapbox.com/assembly/documentation/)
 - [Bulma](https://bulma.io/)
-
+  
 ### Required Components
 
 Your prototype must contain all three of the following components:
@@ -28,13 +28,13 @@ Your prototype must contain all three of the following components:
 
 Your prototype should contain your choice of five of the following components.
 
-- Table
-- Input Group
-- Button Group
-- Glyph Icon
+- Table - done
+- Input Group - done
+- Button Group - done
+- Glyph Icon - done
 - Label
 - Alert
-- Tooltip
+- Tooltip - done
 
 ### Media Queries
 
