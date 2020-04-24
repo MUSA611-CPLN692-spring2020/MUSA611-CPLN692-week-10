@@ -7,14 +7,25 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 540px;
     height: 100%;
     top: 0;
 }
 
-.sidebar {
+.packagebar {
     position: absolute;
     left: 0px;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    background-color: #003647;
+}
+
+.sidebar {
+    position: absolute;
+    left: 200px;
     width: 340px;
     top: 0;
     bottom: 0;
@@ -41,7 +52,7 @@ body {
 .sort {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 200px;
     width: 340px;
     background-color: #fff;
     padding: 20px;
