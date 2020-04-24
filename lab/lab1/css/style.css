@@ -7,14 +7,28 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 540px;
     height: 100%;
     top: 0;
 }
 
-.sidebar {
+.selectbar {
     position: absolute;
     left: 0px;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    background-color: #003647;
+}
+.selction {
+  width: 200px;
+  padding: 10px;
+}
+.sidebar {
+    position: absolute;
+    left: 200px;
     width: 340px;
     top: 0;
     bottom: 0;
@@ -41,7 +55,7 @@ body {
 .sort {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 200px;
     width: 340px;
     background-color: #fff;
     padding: 20px;
@@ -68,6 +82,8 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
+
 
 /* =============
 Media Queries
