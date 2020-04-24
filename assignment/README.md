@@ -1,64 +1,63 @@
 # Final Project Proposal
 
-Your assignment this week is to write a detailed proposal for your final
-project. In proposing your final, try to address each of the following
-areas. Please produce at least a paragraph which addresses the topics below
+*****
+Yuyang Yin & Junya Chen
 
 ## Problem / Question
 
-Applications are ultimately just tools. What problem or question does
-your application attempt to resolve or grapple with? How does your
-application speak to this problem/question?
+
+******
+We want to build a dashboard that could present our Advanced GIS term project. The term project is about real estate development suitability assessment. There are 3 main parts of the project, which are development activeness map, development suitability map, and infrastructure development locator. Most of the maps are maps with hexagons. We want to create a dashboard that could show different sections of our map (different pages for each section), and display different layers according to its attribute table. Ideally, we want to show the dashboard in 3D format, which can be more visually attractive. Tools like draw polygons can be used to calculate the mean index value within the polygon.
 
 ## The data
 
-Geospatial applications are all about working with data. What datasets
-would you plan/like to use? If the data you'll be working with isn't
-already stored in a way that you can use, how will you be storing your data?
+******
+The dataset we want to use is processed and analyzed by ourselves in ArcGIS based on related shapefiles from San Francisco open data. The dataset is a hexagon shapefile with various attributes, which can be ideally converted to geojson format using converters available online.
+The datasets covers:
+        Transportation service area
+        Infrastructure
+        Housing
+        Population
+        Income
+        Landuse
+        Elevation
+        Floodplain
+        Etc.
+
 
 ## Technologies used
 
-Which technologies covered in class (or discovered on your own!) do you
-plan to use? How do you anticipate using each of these technologies?
+******
+Leaflet
+    Present and create interactive maps
+Turf
+    Draw polygons
+Underscore
+    Filter
+jQuery
 
-Review the APIs/online examples of leaflet, turf, jQuery, underscore (or
-any library not explicitly covered in class) for functions/uses which
-you'd like to explore. Briefly describe how you might use them.
+
 
 ## Design spec
 
 #### User experience
+******
+ The users of our applications are real estate developers and city governors who are seeking sites to do real estate or infrastructure development. They can use our map to quickly identify sites that have great development potential. This dashboard could be a helpful tool in the decision-making process.
 
-At a high level, how do you expect people to use your application?
-- Who are the users?
-- What do they gain from your application' use?
-- Are there any website/application examples in the wild to which you can compare your final?
 
 #### Layouts and visual design
+*******
 
-So far, we've built all our applications with a side bar for
-representing non-map content and navigation. This is not the only
-successful design. Extra content could be displayed in a top bar,
-through modals, through side bars on both sides, and any combination of
-these as well as a number not mentioned. Try to describe your
-application's visual layout. Conceptually (no need for extensive CSS
-here), what will this design require?
+A floating sidebar that could potentially hide when a button was clicked
+A clear legend that could update with the map
+An interactive table or chart could be shown when the slide bar was used.
 
 ## Anticipated difficulties
+******
 
-Thinking about weaknesses can be useful. What do you anticipate being
-most difficult about this project? How will you attempt to cope with
-these difficulties? For example, asynchronous behavior (ajax, events)
-are hard to use and think about. Global variables are a strategy for
-coping with that difficulty by breaking data out of the asynchronous
-context.
+The difficult part is to convey the information clearly in the dashboard, how can we reflect a larger scale performance instead of a single hexagon. 3D format might also be a challenging part of this project.
 
 ## Missing pieces
-
-We've only managed to scratch the surface of the available technologies
-by which you could construct an application. What use-cases haven't we covered
-that you think would be useful? What technologies not covered seem exciting to
-you (you don't necessarily have to fully understand what they're for,
-this is a chance for you to get help interpreting a technology's
-purpose/usage).
-
+******
+Charts could reflect only the data / values of the polygons selected
+3D visualization
