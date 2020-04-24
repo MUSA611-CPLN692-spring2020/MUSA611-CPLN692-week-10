@@ -10,11 +10,22 @@ Applications are ultimately just tools. What problem or question does
 your application attempt to resolve or grapple with? How does your
 application speak to this problem/question?
 
+Since this course is the only one that produces a project, I will build the Final
+project on top of my midterm, which was about open space in Philadelphia. My application
+attempts to provide a web with comprehensive list of space people could go to and enjoy
+for residents in the city and visitors coming to Philadelphia. The application will filter
+out locations with different needs.
+
+I will continue using the same dataset as my midterm, which is Park and Public Recreation
+in Philadelphia. And build on the existing filters and use technologies we recently learned
+in class to present paths.
+
 ## The data
 
 Geospatial applications are all about working with data. What datasets
 would you plan/like to use? If the data you'll be working with isn't
 already stored in a way that you can use, how will you be storing your data?
+
 
 ## Technologies used
 
@@ -61,4 +72,3 @@ that you think would be useful? What technologies not covered seem exciting to
 you (you don't necessarily have to fully understand what they're for,
 this is a chance for you to get help interpreting a technology's
 purpose/usage).
-
