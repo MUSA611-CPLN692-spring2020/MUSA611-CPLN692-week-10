@@ -17,9 +17,8 @@ for residents in the city and visitors coming to Philadelphia. The application w
 out locations with different needs.
 
 I will continue using the same dataset as my midterm, which is Park and Public Recreation
-in Philadelphia.
-
-Technologies I would use includes filtering and presenting paths.
+in Philadelphia. And build on the existing filters and use technologies we recently learned
+in class to present paths.
 
 ## The data
 
