@@ -50,4 +50,3 @@ queries that will:
   800px and 480px
 - Remove the sidebar entirely and have the map take up the full screen when the width is smaller than
   480px
-
